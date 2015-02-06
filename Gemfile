@@ -1,8 +1,20 @@
 source 'https://rubygems.org'
 
-gemspec
+gem 'vegas', '~> 0.1.8'
 
-gem 'bson_ext', :require => false
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-mustache'
+gem 'sinatra-assetpack', require: 'sinatra/assetpack'
+gem 'sinatra-backbone'
+
+gem 'json'
+
+gem 'mongo'
+gem 'bson_ext', require: false
+
+gem 'less'
+gem 'therubyracer'
 
 group :development do
   gem 'guard'
@@ -11,6 +23,9 @@ group :development do
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
   gem 'rb-fchange', :require => false
+
+  gem 'pry-byebug'
+  gem 'shotgun'
 end
 
 group :test do
@@ -18,3 +33,4 @@ group :test do
   gem 'json_expressions'
   gem 'faraday'
 end
+

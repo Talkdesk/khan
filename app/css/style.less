@@ -1,0 +1,40 @@
+@import '/app/css/bootstrap';
+
+@blackish: #111;
+@greyish:  #998;
+
+@import '/app/css/mixins';
+
+@import '/app/css/base';
+@import '/app/css/layout';
+@import '/app/css/navbar';
+@import '/app/css/masthead';
+@import '/app/css/sections';
+@import '/app/css/documents';
+@import '/app/css/editor';
+@import '/app/css/keyboard-shortcuts';
+@import '/app/css/prettyprint';
+@import '/app/css/codemirror';
+@import '/app/css/content';
+
+@import '/app/css/responsive';
+
+html, body {
+    background-image: url('/img/backgrounds/body.png');
+}
+
+.navbar-search .grippie {
+    background-image: url('/img/backgrounds/grippie.png');
+}
+
+.nav .dropdown, .navbar-search {
+    background-image: url('/img/backgrounds/nav.png');
+}
+
+section#servers tr.spinning td:first-child {
+    background-image: url('/img/backgrounds/servers_spin.png');
+}
+
+body > section section.spinning > header h2 {
+    background-image: url('/img/backgrounds/section_spin.png');
+}
